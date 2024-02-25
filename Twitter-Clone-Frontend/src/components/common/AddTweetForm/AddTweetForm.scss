@@ -1,0 +1,116 @@
+.add-tweet-form {
+  padding-bottom: 5px;
+  &-wrapper {
+    padding: 5px 15px 5px 15px;
+    display: flex;
+  }
+  &-avatar {
+    margin-right: 12px;
+    padding-top: 5px;
+  }
+  &-content {
+    padding-top: 5px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    &__textarea {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+      outline: none;
+      border: none;
+      background-color: var(--primaryBg);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      font-family: inherit;
+      color: var(--primaryText);
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      resize: none;
+      &::placeholder {
+        color: var(--secondaryText);
+      }
+    }
+    &__retweet {
+      margin-bottom: 12px;
+    }
+  }
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    &-wrapper {
+      margin-top: 10px;
+      display: flex;
+    }
+    &-icon {
+      width: 39px;
+      height: 39px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 9999px;
+      transition-duration: 0.2s;
+      transition-property: background-color;
+      cursor: pointer;
+      &:first-of-type {
+        &:hover {
+          background-color: var(--primaryThemeBgActive);
+        }
+      }
+      & svg {
+        width: 22.5px;
+        height: 22.5px;
+        color: var(--primaryTheme);
+      }
+      &__image {
+        & svg {
+          color: var(--primaryThemeBgActive);
+        }
+      }
+    }
+    &__text-quantity {
+      color: var(--primaryText);
+    }
+    &__circular-progress {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      .MuiCircularProgress-root {
+        position: absolute !important;
+      }
+    }
+    &__button {
+      width: 74px;
+      height: 39px;
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      color: var(--filledBtText);
+      background-color: var(--primaryTheme);
+      outline: none;
+      border-style: none;
+      border-radius: 9999px;
+      transition-duration: 0.2s;
+      transition-property: background-color, box-shadow;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--primaryThemeBtHover);
+        box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+      }
+      &:active {
+        background-color: var(--primaryThemeBtActive);
+        box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+      }
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}

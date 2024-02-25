@@ -1,0 +1,24 @@
+.home {
+  &-header {
+    position: relative;
+    height: 52px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    &__title {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 25px;
+      color: var(--primaryText);
+    }
+  }
+  &-divider {
+    height: 10px;
+    background-color: var(--dividerBg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+}

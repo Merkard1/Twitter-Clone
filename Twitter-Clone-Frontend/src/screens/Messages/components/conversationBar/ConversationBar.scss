@@ -1,0 +1,63 @@
+.conversation-bar {
+  width: inherit;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--border);
+  background-color: var(--primaryBg);
+  & textarea {
+    width: 100%;
+    max-width: 470px;
+    min-height: 22px;
+    margin: 10px 0px;
+    padding: 4px 12px;
+    outline: none;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--primaryText);
+    background-color: var(--border);
+    transition-property: border;
+    transition-duration: 0.2s;
+    &::placeholder {
+      color: var(--secondaryText);
+    }
+    &:focus {
+      background-color: var(--primaryBg);
+      border: 1px solid var(--primaryTheme);
+      outline: none;
+    }
+  }
+  & svg {
+    width: 22.5px;
+    height: 22.5px;
+    padding: 9px;
+    border-radius: 9999px;
+    color: var(--primaryTheme);
+    transition-duration: 0.1s;
+    transition-property: background-color;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--primaryThemeBgHover);
+    }
+  }
+  & .disabled {
+    opacity: 0.5;
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .conversation-bar {
+    position: fixed;
+    bottom: 62px;
+  }
+}

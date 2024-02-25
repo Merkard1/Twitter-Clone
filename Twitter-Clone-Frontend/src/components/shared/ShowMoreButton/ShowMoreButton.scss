@@ -1,0 +1,15 @@
+.show-more-button {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--primaryTheme);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+}

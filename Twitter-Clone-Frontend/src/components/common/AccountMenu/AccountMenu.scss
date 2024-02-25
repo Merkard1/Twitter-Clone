@@ -1,0 +1,132 @@
+.account-menu {
+  &-wrapper {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-button {
+    width: 235px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9999px;
+    transition-duration: 0.2s;
+    transition-property: background-color, box-shadow;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--primaryThemeBgActive);
+      box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    }
+  }
+  &-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 20px;
+    &__fullName {
+      font-weight: 700;
+      color: var(--primaryText);
+      & a {
+        color: var(--primaryText);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__username {
+      font-weight: 400;
+      color: var(--secondaryText);
+    }
+  }
+  &__dots {
+    width: 18.75px;
+    height: 18.75px;
+    color: var(--primaryText);
+  }
+  &-modal {
+    position: absolute;
+    bottom: 70px;
+    left: -12.5px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--primaryBg);
+    box-shadow: rgb(101 119 134 / 20%) 0px 0px 15px, rgb(101 119 134 / 15%) 0px 0px 3px 1px;
+    &__item {
+      width: auto;
+      padding: 15px;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      transition-property: background-color;
+      &:not(:first-child) {
+        border-top: 1px solid var(--border);
+        border-radius: 0px;
+        color: var(--primaryText);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: rgba(230, 236, 240, 0.7);
+      }
+      &:first-child {
+        &:hover {
+          background-color: inherit;
+          box-shadow: none;
+          cursor: initial;
+        }
+      }
+    }
+    &__icon {
+      width: 22px;
+      height: 22px;
+      color: var(--primaryTheme);
+    }
+    &__triangle {
+      position: absolute;
+      bottom: -12.2px;
+      left: 140px;
+      color: var(--primaryBg);
+      filter: drop-shadow(var(--strongBorder) 1px -1px 1px);
+    }
+  }
+}
+
+.main-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .account-menu-modal {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .account-menu {
+    &-button {
+      width: auto;
+    }
+    &__dots {
+      display: none;
+    }
+    &-modal__triangle {
+      left: 22px;
+    }
+  }
+  .menu-content {
+    display: none;
+  }
+}

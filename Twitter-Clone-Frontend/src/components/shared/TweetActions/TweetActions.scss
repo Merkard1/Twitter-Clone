@@ -1,0 +1,94 @@
+.tweet-actions {
+  max-width: 425px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondaryText);
+  font-weight: 400;
+  .liked {
+    color: var(--like);
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+    & svg {
+      width: 18.75px;
+      height: 18.75px;
+    }
+    & span {
+      padding-right: 10px;
+      font-size: 13px;
+    }
+  }
+}
+
+.blue {
+  &:hover {
+    color: var(--primaryTheme);
+    .action--blue {
+      background-color: var(--primaryThemeBgHover);
+    }
+  }
+  &:active {
+    .action--blue {
+      background-color: var(--primaryThemeBgActive);
+    }
+  }
+}
+
+.red {
+  &:hover {
+    color: var(--like);
+    .action--red {
+      background-color: var(--likeHover);
+    }
+  }
+  &:active {
+    .action--red {
+      background-color: var(--likeActive);
+    }
+  }
+}
+
+.green {
+  &:hover {
+    color: var(--repost);
+    .action--green {
+      background-color: var(--repostHover);
+    }
+  }
+  &:active {
+    .action--green {
+      background-color: var(--repostActive);
+    }
+  }
+}
+
+.container {
+  &-reply {
+    &:hover {
+      color: var(--primaryTheme);
+    }
+  }
+  &-retweet {
+    &:hover {
+      color: var(--repost);
+    }
+  }
+  &-like {
+    &:hover {
+      color: var(--like);
+    }
+  }
+}

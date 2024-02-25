@@ -1,0 +1,117 @@
+.tweet {
+  &-wrapper {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    transition-duration: 0.2s;
+    transition-property: background-color, box-shadow;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.07);
+      box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    }
+    &__reply {
+      border-bottom: none;
+    }
+  }
+  &-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12px;
+    padding-top: 10px;
+  }
+  &__line {
+    width: 2px;
+    height: 100%;
+    margin-top: 4px;
+    background-color: var(--strongBorder);
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 8px;
+  }
+  &-desc {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primaryText);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    &__fullName {
+      font-weight: 700;
+      & a {
+        color: var(--primaryText);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__username {
+      margin-left: 5px;
+      color: var(--secondaryText);
+    }
+    &__time {
+      color: var(--secondaryText);
+    }
+    &__dot {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    & svg {
+      width: 18.75px;
+      height: 18.75px;
+      padding: 10px;
+      color: var(--secondaryText);
+      border-radius: 9999px;
+      transition-duration: 0.2s;
+      transition-property: background-color;
+      &:hover {
+        color: var(--primaryTheme);
+        background-color: var(--primaryThemeBgActive);
+      }
+    }
+  }
+  &-body {
+    &__replyingTo {
+      padding-top: 4px;
+      padding-bottom: 16px;
+      color: var(--secondaryText);
+      & a {
+        color: var(--primaryTheme);
+        text-decoration: none;
+      }
+    }
+    &__text {
+      color: var(--primaryText);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    &__reply {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    &__retweet {
+      margin-top: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .tweet-desc__username {
+    display: none;
+  }
+}

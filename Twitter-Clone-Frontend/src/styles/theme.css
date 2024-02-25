@@ -1,0 +1,62 @@
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 2750 !important;
+  transition-delay: 2000 !important;
+}
+
+html {
+  --primaryTheme: rgb(29, 161, 242);
+  --primaryThemeBtHover: rgb(26, 145, 218);
+  --primaryThemeBtActive: rgb(23, 129, 194);
+  --primaryThemeBgHover: rgba(29, 161, 242, 0.1);
+  --primaryThemeBgActive: rgba(29, 161, 242, 0.2);
+
+  --primaryBg: rgb(255, 255, 255);
+  --secondaryBg: rgb(246, 249, 250);
+  --dividerBg: rgb(247, 249, 250);
+  --searchBoxBG: rgb(235, 238, 240);
+  --userProfileBg: rgb(196, 207, 214);
+  --removeButtonBg: rgba(15, 20, 25, 0.5);
+
+  --border: rgb(235, 238, 240);
+  --avatarBorder: rgb(255, 255, 255);
+  --strongBorder: rgb(196, 207, 214);
+
+  --primaryText: rgb(15, 20, 25);
+  --secondaryText: rgb(91, 112, 131);
+  --filledBtText: rgb(255, 255, 255);
+  --tabsProfileText: rgb(136, 153, 166);
+
+  --like: rgb(224, 36, 94);
+  --likeHover: rgba(224, 36, 94, 0.1);
+  --likeActive: rgba(224, 36, 94, 0.2);
+
+  --repost: rgb(23, 191, 99);
+  --repostHover: rgba(23, 191, 99, 0.1);
+  --repostActive: rgba(23, 191, 99, 0.2);
+}
+
+html[data-theme="dark"] {
+  --primaryTheme: rgb(29, 161, 242);
+  --primaryThemeBtHover: rgb(26, 145, 218);
+  --primaryThemeBtActive: rgb(23, 129, 194);
+  --primaryThemeBgHover: rgba(29, 161, 242, 0.1);
+  --primaryThemeBgActive: rgba(29, 161, 242, 0.2);
+
+  --primaryBg: rgb(21, 32, 43);
+  --secondaryBg: rgb(25, 40, 53);
+  --dividerBg: rgb(37, 52, 65);
+  --searchBoxBG: rgb(37, 51, 65);
+  --userProfileBg: rgb(62, 83, 101);
+  --removeButtonBg: rgba(255, 255, 255, 0.5);
+
+  --border: rgb(56, 68, 77);
+  --avatarBorder: rgb(21, 32, 43);
+  --strongBorder: rgb(56, 68, 77);
+
+  --primaryText: rgb(255, 255, 255);
+  --secondaryText: rgb(136, 153, 166);
+  --tabsProfileText: rgb(136, 153, 166);
+}

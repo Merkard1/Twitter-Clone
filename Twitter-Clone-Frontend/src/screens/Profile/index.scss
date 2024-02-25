@@ -1,0 +1,141 @@
+.profile {
+  &-header {
+    position: relative;
+    height: 52px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    &-wrapper {
+      display: flex;
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 25px;
+      color: var(--primaryText);
+    }
+    &__quantity {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      color: var(--secondaryText);
+    }
+  }
+  &-user {
+    &-background {
+      width: 100%;
+      height: 200px;
+      background-color: var(--userProfileBg);
+      & img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-buttons {
+      align-self: center;
+      margin-top: 40px;
+      & button {
+        height: 32px;
+        margin-top: 5px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--primaryTheme);
+        outline: none;
+        border: 1px solid var(--primaryTheme);
+        border-radius: 9999px;
+        background-color: inherit;
+        transition-duration: 0.2s;
+        transition-property: background-color;
+        &:hover {
+          background-color: var(--primaryThemeBgActive);
+        }
+      }
+    }
+    &-info {
+      margin-top: -70px;
+      margin-bottom: 16px;
+      padding: 0px 16px;
+      color: var(--primaryText);
+      font-size: 15px;
+      line-height: 16px;
+    }
+    &-fullname {
+      margin-top: 4px;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 25px;
+    }
+    &-username {
+      margin-bottom: 12px;
+      color: var(--secondaryText);
+    }
+    &-biography {
+      margin-bottom: 12px;
+    }
+    &-joined-date {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      color: var(--secondaryText);
+      line-height: 12px;
+      & svg {
+        margin-right: 5px;
+      }
+    }
+    &-details {
+      display: flex;
+      &-item {
+        margin-right: 20px;
+      }
+      &-item:last-child {
+        margin-right: 0px;
+      }
+      &__quantity {
+        margin-right: 5px;
+        font-weight: 700;
+      }
+      &__title {
+        color: var(--secondaryText);
+      }
+    }
+    .MuiTabs-root {
+      border-bottom: 1px solid var(--border);
+    }
+    .MuiTab-root {
+      text-transform: none !important;
+      min-width: auto !important;
+      padding: 0;
+    }
+    .MuiTab-textColorPrimary.Mui-selected {
+      color: var(--primaryTheme);
+    }
+    .MuiTab-textColorPrimary {
+      color: var(--secondaryText);
+    }
+    .PrivateTabIndicator-colorPrimary-2 {
+      background-color: var(--primaryTheme);
+    }
+    .MuiTab-wrapper {
+      font-weight: 700 !important;
+      font-size: 15px;
+    }
+    .MuiBox-root {
+      padding: 0 !important;
+    }
+  }
+}

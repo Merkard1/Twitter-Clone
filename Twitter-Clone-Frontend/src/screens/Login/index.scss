@@ -1,0 +1,184 @@
+.login {
+  &__wrapper {
+    min-width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  &__body {
+    display: flex;
+    flex-grow: 1;
+  }
+  &__footer {
+    padding: 12px 16px 12px 16px;
+    background-color: var(--primaryBg);
+    & nav {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+.image-side {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #71c9f8;
+  &__main-twitter-icon {
+    position: absolute;
+    left: 68%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    color: var(--primaryTheme);
+  }
+  &-list-info {
+    position: relative;
+    max-width: 380px;
+    margin: 0px;
+    padding: 16px 0;
+    list-style: none;
+    &__item {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+    &__icon {
+      margin-right: 15px;
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+.login-side {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryBg);
+  color: var(--primaryText);
+  &__wrapper {
+    width: 380px;
+  }
+  &__twitter-icon {
+    width: 45px;
+    height: 45px;
+    padding-bottom: 12px;
+    color: var(--primaryTheme);
+  }
+  &__title {
+    &--primaryTheme {
+      margin-top: 0px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+    &--secondary {
+      margin-top: 64px;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  &__button {
+    max-width: 360px;
+    width: 100%;
+    height: 39px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    outline: none;
+    border-style: none;
+    border-radius: 9999px;
+    color: var(--filledBtText);
+    background-color: var(--primaryTheme);
+    transition-duration: 0.2s;
+    transition-property: background-color, box-shadow;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+.button {
+  &--signUp {
+    max-width: none;
+    &:hover {
+      background-color: var(--primaryThemeBtHover);
+      box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    }
+    &:active {
+      background-color: var(--primaryThemeBtActive);
+      box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    }
+  }
+  &--signIn {
+    max-width: none;
+    border: 1px solid var(--primaryTheme);
+    color: var(--primaryTheme);
+    background-color: var(--primaryBg);
+    &:hover {
+      background-color: var(--primaryThemeBgHover);
+      box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    }
+    &:active {
+      background-color: var(--primaryThemeBgActive);
+      box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    }
+  }
+}
+.login-form {
+  &-control {
+    margin-bottom: 25px !important;
+  }
+  &__field {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+  }
+  &__button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.MuiFormLabel-root {
+  color: var(--secondaryText) !important;
+}
+.MuiFilledInput-multiline {
+  padding: 0 !important;
+}
+.MuiFilledInput-root {
+  background-color: var(--secondaryBg) !important;
+}
+.MuiFilledInput-input {
+  padding: 24px 12px 7px !important;
+  color: var(--primaryText) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: var(--primaryTheme) !important;
+}
+.MuiFilledInput-underline:after {
+  border-color: var(--primaryTheme) !important;
+}
+
+@media screen and (max-width: 850px) {
+  .login__body {
+    flex-direction: column-reverse;
+  }
+}

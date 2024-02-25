@@ -1,0 +1,50 @@
+.connect-person {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  transition-duration: 0.2s;
+  transition-property: background-color, box-shadow;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &-avatar {
+    margin-right: 12px;
+  }
+  &-desc {
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    color: var(--primaryText);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__fullName {
+    font-weight: 700;
+    & a {
+      color: var(--primaryText);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__username {
+    color: var(--secondaryText);
+  }
+  &__bio {
+    padding-top: 4px;
+  }
+  &-button {
+    display: flex;
+    align-self: center;
+  }
+}

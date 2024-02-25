@@ -1,0 +1,29 @@
+# dependencies
+Twitter-Clone-Frontend/node_modules/
+Twitter-Clone-Frontend/.pnp
+Twitter-Clone-Frontend/.pnp.js
+
+# testing
+Twitter-Clone-Frontend/coverage/
+
+# production
+Twitter-Clone-Frontend/build/
+
+# misc
+Twitter-Clone-Frontend/.DS_Store
+Twitter-Clone-Frontend/.env.local
+Twitter-Clone-Frontend/.env.development.local
+Twitter-Clone-Frontend/.env.test.local
+Twitter-Clone-Frontend/.env.production.local
+Twitter-Clone-Frontend/.eslintcache
+Twitter-Clone-Frontend/.eslintrc
+Twitter-Clone-Frontend/.vscode/
+Twitter-Clone-Frontend/react-app-env.d.ts
+
+Twitter-Clone-Frontend/npm-debug.log*
+Twitter-Clone-Frontend/yarn-debug.log*
+Twitter-Clone-Frontend/yarn-error.log*
+
+Twitter-Clone-Backend/.env
+Twitter-Clone-Backend/node_modules
+Twitter-Clone-Backend/.vscode
